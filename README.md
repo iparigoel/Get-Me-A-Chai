@@ -53,8 +53,8 @@ A full-stack web application built with Next.js that allows users to receive sup
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/get-me-a-chai.git
-cd get-me-a-chai
+git clone https://github.com/iparigoel/Get-Me-A-Chai.git
+cd Get-Me-A-Chai
 ```
 
 ### 2. Install dependencies
