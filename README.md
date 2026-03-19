@@ -1,36 +1,124 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ☕ Get Me A Chai
 
-## Getting Started
+A full-stack web application built with Next.js that allows users to receive support in the form of payments along with messages from others.
 
-First, run the development server:
+## 🚀 Features
+
+* 🔐 Authentication using GitHub OAuth
+* 👤 User dashboard to manage profile
+* 🖼️ Profile customization (name, bio, profile image)
+* 💳 Razorpay integration for secure payments
+* 📊 View supporters and messages
+* 🌐 Public user page for receiving support
+* ⚡ Fast and optimized UI with Next.js
+* 🗄️ MongoDB for storing user and transaction data
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend & Backend:**
+
+* Next.js (Full-stack framework)
+
+**Database:**
+
+* MongoDB
+
+**Authentication:**
+
+* GitHub OAuth
+
+**Payments:**
+
+* Razorpay API
+
+---
+
+## 📂 Project Structure
+
+```
+/app or /pages   # Next.js routing
+/components      # Reusable UI components
+/lib             # Utility functions
+/models          # MongoDB schemas
+/api             # API routes
+/public          # Static assets
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/get-me-a-chai.git
+cd get-me-a-chai
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Environment Variables
+
+Create a `.env.local` file:
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+GITHUB_CLIENT_ID=your_github_client_id
+GITHUB_CLIENT_SECRET=your_github_secret
+RAZORPAY_KEY_ID=your_key_id
+RAZORPAY_KEY_SECRET=your_key_secret
+NEXTAUTH_SECRET=your_secret
+NEXTAUTH_URL=http://localhost:3000
+```
+
+---
+
+## ▶️ Running the Project
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App will run on:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 💡 How It Works
 
-To learn more about Next.js, take a look at the following resources:
+* Users sign in using GitHub
+* They set up their profile and Razorpay credentials
+* Each user gets a public page
+* Supporters can send payments and leave messages
+* Users can track all supporters and messages from their dashboard
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 📌 Future Improvements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Email notifications for payments
+* Advanced analytics dashboard
+* Social sharing
+* Mobile responsiveness improvements
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🤝 Contributing
+
+Feel free to fork this repo and submit pull requests.
+
+---
+
+## 📄 License
+
+MIT License
